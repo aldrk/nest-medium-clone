@@ -1,5 +1,5 @@
-import { ConnectionOptions } from "typeorm";
-import * as path from "path";
+import { ConnectionOptions } from "typeorm"
+import * as path from "path"
 
 const config: ConnectionOptions = {
 	type: "postgres",
@@ -16,4 +16,4 @@ const config: ConnectionOptions = {
 	}
 }
 
-export default config;
+export default config
