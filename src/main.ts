@@ -1,3 +1,5 @@
+if (!process.env.IS_TS_MODE) require("module-alias/register")
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
