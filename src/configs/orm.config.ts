@@ -12,7 +12,7 @@ const config: ConnectionOptions = {
 	synchronize: false,
 	migrations: [path.join(__dirname, "../", "/migrations/*.{ts,js}")],
 	cli: {
-		migrationsDir: path.join(__dirname, "../", "/migrations/*.{ts,js}")
+		migrationsDir: path.join(__dirname, "../", "/migrations")
 	}
 }
 
