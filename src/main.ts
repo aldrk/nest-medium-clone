@@ -1,13 +1,17 @@
-if (!process.env.IS_TS_MODE) require("module-alias/register")
+/* tslint:disable no-var-requires */
+if (!process.env.IS_TS_MODE) {
+	require("module-alias/register")
+}
 
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { NestFactory } from "@nestjs/core"
+import { AppModule } from "./app.module"
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+	const app = await NestFactory.create(AppModule)
 
-  app.setGlobalPrefix("api")
+	app.setGlobalPrefix("api")
 
-  await app.listen(3000);
+	await app.listen(3000)
 }
-bootstrap();
+
+bootstrap()
